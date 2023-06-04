@@ -1,0 +1,97 @@
+
+    .calc-body {
+        width: 275px;
+        margin: auto;
+        min-height: 400px;
+        box-shadow: 0 8px 50px -7px black;
+        background: #3A4655;
+       
+    }
+
+    .calc-screen {
+        padding: 1rem;
+    }
+
+    #calc-operation {
+        font-size: 1.3rem;
+        text-align: right;
+        color: #727B86;
+        padding-bottom: .5rem;
+    }
+    
+    #calc-typed {
+        font-size: 2rem;
+        text-align: right;
+        color: #fff;
+    }
+    .calc-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    .calc-button-row {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        width: 50%;
+        border: 1px black solid;
+    }
+    .display{
+        background-color: #9b9c9f80;
+    }
+    .display{
+        grid-column: 1/5;
+        text-align: end;
+        padding: 5px 20px;
+    }
+    .display-prev{
+        height: 30px;
+        font-size: 20px;
+    }
+    .display-main{
+        height: 50px;
+        font-size: 30px;
+    }
+    .calc-button-row button {
+        
+        background: #1f0c8db9;
+        color: #fff;
+        height: 65px;
+        font-size: 1.3rem;
+        border: none;
+        border-color: #573c47;
+        border-width: 0.1px 0.1px 0.1px 0.1px;
+        border-style: solid;
+
+    }
+
+    .calc-button-row button.ac {
+        color: #ff7665;
+    }
+
+    .calc-button-row button.opt {
+        color: #ffbc56;
+    }
+
+    .calc-button-row button:active {
+        animation: buttonClickAnimation 0.3s;
+    }
+
+    .calc-button-row button:hover {
+        background: #99c1da;
+        color:black;
+    }
+
+    @keyframes buttonClickAnimation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.8);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
